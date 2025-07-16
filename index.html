@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blinkz Team | Esports</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #00ffcc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-top: 20%;
+      animation: blink 1s infinite;
+      color: #00ffcc;
+      text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
+    }
+
+    p {
+      font-size: 24px;
+      margin-top: 10px;
+      color: #ffffffb0;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .glow {
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee, 0 0 60px #00ffee;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="glow">Blinkz Team</h1>
+  <p>Elite Gaming & Esports Organization</p>
+</body>
+</html>

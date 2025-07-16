@@ -2,53 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blinkz Team | Esports</title>
+  <title>Blinkz Team | BKZ</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #000000;
+      background: black;
       color: #00ffcc;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       text-align: center;
       overflow: hidden;
     }
 
     h1 {
+      margin-top: 20vh;
       font-size: 80px;
-      margin-top: 20%;
-      animation: blink 1s infinite;
+      animation: blink 1.5s infinite;
       color: #00ffcc;
-      text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 60px #00ffcc;
+      text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 80px #00ffcc;
     }
 
     p {
       font-size: 24px;
-      margin-top: 10px;
-      color: #ffffffb0;
+      color: #ffffffb2;
     }
 
     @keyframes blink {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+      50% { opacity: 0.5; }
     }
 
-    .glow {
-      animation: glow 2s ease-in-out infinite alternate;
+    .discord-link {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #7289da;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 0 20px #7289da;
+      transition: background 0.3s, box-shadow 0.3s;
     }
 
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
-      }
-      to {
-        text-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee, 0 0 60px #00ffee;
-      }
+    .discord-link:hover {
+      background: #5b6eae;
+      box-shadow: 0 0 30px #5b6eae;
     }
   </style>
 </head>
 <body>
-  <h1 class="glow">Blinkz Team</h1>
+  <h1>Blinkz Team</h1>
   <p>Elite Gaming & Esports Organization</p>
+
+  <a class="discord-link" href="https://discord.gg/QUDfkCGBHm" target="_blank">
+    Join BKZ Discord
+  </a>
 </body>
 </html>
